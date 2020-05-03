@@ -1,5 +1,5 @@
 # Quiz-studia
-- Zadanie zaliczenionwe Politechnika Śląska
+# Zadanie zaliczenionwe Politechnika Śląska
 - Program działa 2pkt
 - Zaimplementowano pełną funkcjonalność 3pkt
 - Kod programu jest podzielony na moduły 2pkt
@@ -15,3 +15,5 @@
 - Występują zmienne globalne, pętle z warunkiem’true’-2pkt 
 - Występuje instrukcjagoto-2Wycieki pamięci -15pkt
 - Łączna liczba punktów : 30PKT
+
+#Compilator: GCC
