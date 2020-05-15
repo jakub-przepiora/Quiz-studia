@@ -13,7 +13,8 @@
 - [  ]  Ogólne wrażenie 5pkt
 - [  ]  Sprawozdanie 2pkt 
 - [  ]  Występują zmienne globalne, pętle z warunkiem’true’-2pkt 
-- [  ]  Występuje instrukcjagoto-2Wycieki pamięci -15pkt
+- [  ]  Występuje instrukcja goto -2pkt
+- [  ]  Wycieki pamięci -15pkt
 - [  ]  Łączna liczba punktów : 30PKT
 
 # TO DO 
