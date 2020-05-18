@@ -21,7 +21,7 @@ void createListQuestion() {
     int j = 0;
     FILE *plik = fopen("pytania.txt", "r");
 
-    while (znak != EOF) // go to END OF FILE
+    while (fscanf(plik, "%10i" ,znak) != EOF) // go to END OF FILE
     {
         // GET QUESTION
         znak = 0;
