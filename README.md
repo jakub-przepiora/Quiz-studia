@@ -1,6 +1,6 @@
 # Quiz-studia
 # Zadanie zaliczenionwe Politechnika Śląska
-- [  ]  Program działa 2pkt\n
+- [ X ]  Program działa 2pkt\n
 - [  ]  Zaimplementowano pełną funkcjonalność 3pkt
 - [  ]  Kod programu jest podzielony na moduły 2pkt
 - [  ]  Długość funkcji nie przekracza jednego ekranu 1pkt
