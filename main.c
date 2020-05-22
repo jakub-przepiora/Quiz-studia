@@ -8,9 +8,10 @@ void saveStats(int allPoints, char user[32]) {
         perror("Error opening file.");
     }
     else{
-        fprintf(statsFile, "%s: %d", user, allPoints);
+        fprintf(statsFile, "%s: %d\n", user, allPoints);
         fclose(statsFile);
     }
+    return;
 }
 
 void checkAnsw(int *ans, int *goodAns) {
@@ -29,101 +30,63 @@ void checkAnsw(int *ans, int *goodAns) {
     
     
 }
-void createListQuestion()
-{
-    // struct DaneQuiz daneDoQuizu;
-    int znak = 0;
-    int i = 0;
-    int j = 0;
-    int odpowiedzi[10];
-    int goodAnsw[10];
-    int p = 0;
-    // TMP VARIABLE //
-    int idQ = 1;
-    char titleQ[50];
-    int goodAns;
-    char firstAns[50];
-    char secondAns[50];
-    char thirdAns[50];
-    char fourthAns[50];
-
-    FILE *plik = fopen("pytania.txt", "r");
-    // go to END OF FILE
-    while (fscanf(plik, "%d" ,&znak) != EOF) {
-        
-        // GET QUESTION
-        znak = 0;
-        i = 0;
+void createListQuestion(){
+    int znak = 0, i = 0, j = 0, odpowiedzi[10], goodAnsw[10], p = 0;           // INTIGER HELP VAARIABLE
+    char titleQ[50], firstAns[50], secondAns[50], thirdAns[50], fourthAns[50]; // TMP VARIABLE 
+    FILE *plik = fopen("pytania.txt", "r"); // File open
+    while (fscanf(plik, "%d" ,&znak) != EOF) {     // go to END OF FILE
+        znak = 0; //clear cache start read question
+        i = 0;    //clear cache start read question
         printf("\n");
-        while (znak != 10)
-        {
-
+        while (znak != 10){ // GET QUESTION
             znak = getc(plik);
             titleQ[i] = znak;
             printf("%c", znak);
             i++;
         }
-
-        // GOOD ANSWER GET
-
+        // GOOD ANSWER GET 
         znak = 0;
-
-        printf("Good Answer: ");
+        printf("Good Answer: "); // user for test
         znak = getc(plik);
-        // if(!znak > 47 && !znak < 53) return;
         goodAnsw[p] = znak - 48;
-        printf("%i ", goodAnsw[p]);
-
-    
+        printf("%i ", goodAnsw[p]); // user for test
         // ALL ANSWER GET
         znak = getc(plik); //Clear end line
         printf("%c", znak);
         //// First ////
-
         printf("1) ");
-        
         znak = 0;
-        while (znak != '\n')
-        {
-
+        while (znak != '\n'){
             znak = getc(plik);
             firstAns[j] = znak;
             printf("%c", znak);
             j++;
         }
-
         //// Second ////
         printf("2) ");
         j = 0;
         znak = 0;
-        while (znak != '\n')
-        {
-
+        while (znak != '\n'){
             znak = getc(plik);
             secondAns[j] = znak;
             printf("%c", znak);
             j++;
         }
-
         //// Third ////
         printf("3) ");
         j = 0;
         znak = 0;
-        while (znak != '\n')
-        {
-
+        while (znak != '\n'){
             znak = getc(plik);
             thirdAns[j] = znak;
             printf("%c", znak);
             j++;
-            // daneQuiz head;
         }
         //// Fourth ////
         printf("4) ");
         j = 0;
         znak = 0;
-        while (znak != '\n')
-        {
+        while (znak != '\n'){
             znak = getc(plik);
             fourthAns[j] = znak;
             printf("%c", znak);
@@ -133,8 +96,7 @@ void createListQuestion()
         int odpTMP;
         int wh = 0;
         scanf("%i",&odpTMP);
-        while ( wh != 1)
-        {
+        while ( wh != 1){
             if(odpTMP > 0 && odpTMP < 5) {
                 odpowiedzi[p] = odpTMP;
                 p++;
@@ -145,25 +107,43 @@ void createListQuestion()
                 scanf("%i", &odpTMP);
             }
         }
-        
-        
         printf("\n=======================\n");
-
     }
-
     fclose(plik);
     checkAnsw(goodAnsw, odpowiedzi);
 }
 
-void showQuiz()
-{
+void showQuiz(){
     createListQuestion(); // Create list
 }
 
 int main(int argc, char **argv) {
-    // struct DaneQuiz head;
-    showQuiz();
-    // showQuestionList();
-    
+    // printf("%s\n", argv[1]);
+    // printf("%s\n", argv[2]);
+    // printf("%s\n", argv[3]);
+    // printf("%s\n", argv[4]);
+    // printf("%s\n", argv[5]);
+    // printf("%s\n", argv[6]);
+    char base[20], nick[32] ;
+    int howMany;
+    for(int i = 1; i < 7; i++){
+        printf("%s\n", argv[i]);
+        if (argv[i] == "-o"){
+            strncpy(base, &argv[i + 1], 20);
+        }
+        else if (argv[i] == "-n"){
+            strncpy(nick, &argv[i + 1], 32);
+        }
+        else if (argv[i] == "-q"){
+            howMany = argv[i + 1]-48;
+        }
+    }
+    printf("Error arguments try again\n");
+    printf("%s\n", base);
+    printf("%s\n", nick);
+    printf("%d\n", howMany);
+
+        showQuiz();
+
     return 0;
 }

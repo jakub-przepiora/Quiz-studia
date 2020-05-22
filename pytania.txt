@@ -28,3 +28,15 @@ ani razu
 nieskonczenie wiele razy
 6
 7
+Jaki jest najlepszy jezyk programowania?
+3
+Python
+C++
+C
+Java
+Co to jest github?
+2
+Odmiana kota
+System kontroli wersji
+Potrawa
+Framework
