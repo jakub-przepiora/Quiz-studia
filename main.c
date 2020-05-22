@@ -113,37 +113,36 @@ void createListQuestion(){
     checkAnsw(goodAnsw, odpowiedzi);
 }
 
-void showQuiz(){
-    createListQuestion(); // Create list
-}
-
 int main(int argc, char **argv) {
-    // printf("%s\n", argv[1]);
-    // printf("%s\n", argv[2]);
-    // printf("%s\n", argv[3]);
-    // printf("%s\n", argv[4]);
-    // printf("%s\n", argv[5]);
-    // printf("%s\n", argv[6]);
-    char base[20], nick[32] ;
-    int howMany;
+
+    char base[20], nick[32];
+    char howMany[5];
+    int que;
     for(int i = 1; i < 7; i++){
-        printf("%s\n", argv[i]);
-        if (argv[i] == "-o"){
-            strncpy(base, &argv[i + 1], 20);
+        // printf("%s\n", argv[i]);
+        if (strcmp(argv[i], "-o") == 0){
+            printf("ok\n");
+            strncpy(base, argv[i + 1], 20);
         }
-        else if (argv[i] == "-n"){
-            strncpy(nick, &argv[i + 1], 32);
+        else if (strcmp(argv[i], "-n") == 0){
+            printf("ok\n");
+            strncpy(nick, argv[i + 1], 32);
         }
-        else if (argv[i] == "-q"){
-            howMany = argv[i + 1]-48;
+        else if (strcmp(argv[i], "-q") == 0){
+            printf("ok\n");
+            // long conv = strtol(, &tmp, 10);
+            strcpy(howMany, argv[i+1]);
+            que = atoi(howMany);
         }
+
+        
     }
-    printf("Error arguments try again\n");
+    
     printf("%s\n", base);
     printf("%s\n", nick);
-    printf("%d\n", howMany);
+    printf("%i\n", que);
 
-        showQuiz();
+    createListQuestion();
 
     return 0;
 }
