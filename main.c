@@ -1,86 +1,31 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-// #include <cstdio.h>
 
-// struct DaneQuiz {
-//     int id;
-//     char titleQuestion[50];
-//     int  goodAnswer;
-//     char firstAnswer[50];
-//     char secondAnswer[50];
-//     char thirdAnswer[50];
-//     char fourthAnswer[50];
-//     int  point;
-//     struct DaneQuiz * next;
-// } DaneQuiz;
-// typedef struct DaneQuiz *daneQuiz;
-
-// struct DaneQuiz *AddDaneQuiz(daneQuiz head, int idQuest, char *title, int goodAns, char *first, char *second, char *third, char *fourth)
-// {
-//     struct DaneQuiz *dane;
-//     dane = (struct DaneQuiz *)malloc(sizeof(struct DaneQuiz));
-//     dane->id = idQuest;
-//     strcpy(dane->titleQuestion, title);  /*set Question*/
-//     dane->goodAnswer = goodAns;          /*set good Answer*/
-//     strcpy(dane->firstAnswer, first);    /*set First Answer*/
-//     strcpy(dane->secondAnswer, second);  /*set Second Answer*/
-//     strcpy(dane->thirdAnswer, third);    /*set Third Answer*/
-//     strcpy(dane->fourthAnswer, fourth);  /*set Fourth Answer*/
-//     dane->point = 0;                     /*set default */
-//     dane->next = NULL;                   /*set next, point to NULL*/
-//     if(head != NULL) {
-//         head = dane;
-//         printf("first elemmenet");
-//     }
-//     else {
-//         while (head->next != NULL) {
-//             if (head->next == NULL){
-//                 head->next = dane;
-//             }
-//             head = head->next;
-//         }
-//     }
-//     free(dane);
-    
-// }
-
-// void showQuestionList(){
-//     printf("Dynamic list: \n");
-//     while (head != NULL) {
-//         if (head != NULL) {
-//             printf("%i" ,head->id);
-//         }
-//         head = head->next;
-//     }
-//     return;
-// }
 void saveStats(int allPoints, char user[32]) {
     FILE * statsFile = fopen("stats.txt", "a");
-    if (pFile == NULL) {
+    if (statsFile== NULL) {
         perror("Error opening file.");
     }
     else{
-        while (!feof(pFile)){
-            if (fgets(buffer, 100, pFile) != NULL){
-                
-            }
-        }
-
+        fprintf(statsFile, "%s: %d", user, allPoints);
         fclose(statsFile);
     }
+}
 
-void checkAnsw(int ans, int goodAns) {
+void checkAnsw(int *ans, int *goodAns) {
     int points = 0;
     char nickname[32];
     for (int i = 0; i < 10; i++) {
-        if (goodAns == ans){
+        if (goodAns[i] == ans[i]){
             points++;
+            
         }
     }
-
+    printf("goodans: %d \n", points);
     printf("\nYour nickname: ");
-    scanf(nickname);
+    scanf("%s\n" ,nickname);
+    saveStats(points, nickname);
     
     
 }
@@ -203,11 +148,7 @@ void createListQuestion()
         
         
         printf("\n=======================\n");
-        // znak = getc(plik); //Clear end line
-        // printf("%c\n", znak);
 
-        // AddDaneQuiz( idQ, titleQ, goodAns, firstAns, secondAns, thirdAns, fourthAns);
-        // idQ++;
     }
 
     fclose(plik);
@@ -219,7 +160,7 @@ void showQuiz()
     createListQuestion(); // Create list
 }
 
-int main() {
+int main(int argc, char **argv) {
     // struct DaneQuiz head;
     showQuiz();
     // showQuestionList();
