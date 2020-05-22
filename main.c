@@ -3,56 +3,98 @@
 #include <string.h>
 // #include <cstdio.h>
 
-struct DaneQuiz {
-    char titleQuestion[50];
-    int  goodAnswer;
-    char firstAnswer[50];
-    char secondAnswer[50];
-    char thirdAnswer[50];
-    char fourthAnswer[50];
-    int  point;
-    struct DaneQuiz * next;
-} DaneQuiz;
-typedef struct DaneQuiz *daneQuiz;
+// struct DaneQuiz {
+//     int id;
+//     char titleQuestion[50];
+//     int  goodAnswer;
+//     char firstAnswer[50];
+//     char secondAnswer[50];
+//     char thirdAnswer[50];
+//     char fourthAnswer[50];
+//     int  point;
+//     struct DaneQuiz * next;
+// } DaneQuiz;
+// typedef struct DaneQuiz *daneQuiz;
 
-struct DaneQuiz *AddDaneQuiz(daneQuiz head, char *title, int goodAns, char *first, char *second, char *third, char *fourth)
+// struct DaneQuiz *AddDaneQuiz(daneQuiz head, int idQuest, char *title, int goodAns, char *first, char *second, char *third, char *fourth)
+// {
+//     struct DaneQuiz *dane;
+//     dane = (struct DaneQuiz *)malloc(sizeof(struct DaneQuiz));
+//     dane->id = idQuest;
+//     strcpy(dane->titleQuestion, title);  /*set Question*/
+//     dane->goodAnswer = goodAns;          /*set good Answer*/
+//     strcpy(dane->firstAnswer, first);    /*set First Answer*/
+//     strcpy(dane->secondAnswer, second);  /*set Second Answer*/
+//     strcpy(dane->thirdAnswer, third);    /*set Third Answer*/
+//     strcpy(dane->fourthAnswer, fourth);  /*set Fourth Answer*/
+//     dane->point = 0;                     /*set default */
+//     dane->next = NULL;                   /*set next, point to NULL*/
+//     if(head != NULL) {
+//         head = dane;
+//         printf("first elemmenet");
+//     }
+//     else {
+//         while (head->next != NULL) {
+//             if (head->next == NULL){
+//                 head->next = dane;
+//             }
+//             head = head->next;
+//         }
+//     }
+//     free(dane);
+    
+// }
+
+// void showQuestionList(){
+//     printf("Dynamic list: \n");
+//     while (head != NULL) {
+//         if (head != NULL) {
+//             printf("%i" ,head->id);
+//         }
+//         head = head->next;
+//     }
+//     return;
+// }
+void saveStats(int allPoints, char user[32]) {
+    FILE * statsFile = fopen("stats.txt", "a");
+    if (pFile == NULL) {
+        perror("Error opening file.");
+    }
+    else{
+        while (!feof(pFile)){
+            if (fgets(buffer, 100, pFile) != NULL){
+                
+            }
+        }
+
+        fclose(statsFile);
+    }
+
+void checkAnsw(int ans, int goodAns) {
+    int points = 0;
+    char nickname[32];
+    for (int i = 0; i < 10; i++) {
+        if (goodAns == ans){
+            points++;
+        }
+    }
+
+    printf("\nYour nickname: ");
+    scanf(nickname);
+    
+    
+}
+void createListQuestion()
 {
-    struct DaneQuiz *dane;
-    dane = (struct DaneQuiz *)malloc(sizeof(struct DaneQuiz));
-    strcpy(dane->titleQuestion, title);  /*set Question*/
-    dane->goodAnswer = goodAns;          /*set good Answer*/
-    strcpy(dane->firstAnswer, first);    /*set First Answer*/
-    strcpy(dane->secondAnswer, second);  /*set Second Answer*/
-    strcpy(dane->thirdAnswer, third);    /*set Third Answer*/
-    strcpy(dane->fourthAnswer, fourth);  /*set Fourth Answer*/
-    dane->point = 0;                     /*set default */
-    dane->next = NULL;                   /*set next, point to NULL*/
-    if(!head){
-        head = dane;
-    }
-    while (head->next){
-        if (head->next == NULL){
-            head->next = dane;
-        }
-        head = head->next;
-    }
-}
-
-void showQuestionList(daneQuiz head){
-    while (head){
-        if (head){
-            printf("1.%s\n1) %s\n2) %s\n3) %s\n4) %s\n", head->titleQuestion, head->firstAnswer, head->secondAnswer, head->thirdAnswer, head->fourthAnswer);
-        }
-        head = head->next;
-    }
-}
-void createListQuestion() {
-    struct DaneQuiz daneDoQuizu;
+    // struct DaneQuiz daneDoQuizu;
     int znak = 0;
     int i = 0;
     int j = 0;
-
+    int odpowiedzi[10];
+    int goodAnsw[10];
+    int p = 0;
     // TMP VARIABLE //
+    int idQ = 1;
     char titleQ[50];
     int goodAns;
     char firstAns[50];
@@ -84,8 +126,8 @@ void createListQuestion() {
         printf("Good Answer: ");
         znak = getc(plik);
         // if(!znak > 47 && !znak < 53) return;
-        goodAns = znak - 48;
-        printf("%i ", goodAns);
+        goodAnsw[p] = znak - 48;
+        printf("%i ", goodAnsw[p]);
 
     
         // ALL ANSWER GET
@@ -129,6 +171,7 @@ void createListQuestion() {
             thirdAns[j] = znak;
             printf("%c", znak);
             j++;
+            // daneQuiz head;
         }
         //// Fourth ////
         printf("4) ");
@@ -141,24 +184,45 @@ void createListQuestion() {
             printf("%c", znak);
             j++;
         }
+        printf("Podaj Twoja odpowiedz: ");
+        int odpTMP;
+        int wh = 0;
+        scanf("%i",&odpTMP);
+        while ( wh != 1)
+        {
+            if(odpTMP > 0 && odpTMP < 5) {
+                odpowiedzi[p] = odpTMP;
+                p++;
+                wh = 1;
+            }
+            else {
+                printf("Error answear\n Choose other answear:");
+                scanf("%i", &odpTMP);
+            }
+        }
+        
+        
         printf("\n=======================\n");
         // znak = getc(plik); //Clear end line
         // printf("%c\n", znak);
 
-        AddDaneQuiz(titleQ, goodAns, firstAns, secondAns, thirdAns, fourthAns);
+        // AddDaneQuiz( idQ, titleQ, goodAns, firstAns, secondAns, thirdAns, fourthAns);
+        // idQ++;
     }
 
     fclose(plik);
+    checkAnsw(goodAnsw, odpowiedzi);
 }
 
-
-void showQuiz() {
+void showQuiz()
+{
     createListQuestion(); // Create list
 }
 
 int main() {
-    struct DaneQuiz head;
+    // struct DaneQuiz head;
     showQuiz();
-    showQuestionList(&head);
+    // showQuestionList();
+    
     return 0;
 }
