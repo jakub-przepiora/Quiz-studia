@@ -32,7 +32,8 @@ void createListQuestion(char *filename, char *name, int question){
     int znak = 0, i = 0, j = 0, odpowiedzi[10], goodAnsw[10], p = 0;           // INTIGER HELP VAARIABLE
     char titleQ[50], firstAns[50], secondAns[50], thirdAns[50], fourthAns[50]; // TMP VARIABLE 
     FILE *plik = fopen(filename, "r"); // File open
-    while (fscanf(plik, "%d" ,&znak) != EOF) {     // go to END OF FILE
+    // while (fscanf(plik, "%d" ,&znak) != EOF) {     // go to END OF FILE
+    for(int k = 0; k < question; k++){
         znak = 0; //clear cache start read question
         i = 0;    //clear cache start read question
         printf("\n============================================================\n");
