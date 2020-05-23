@@ -1,502 +1,502 @@
-Typ zmiennych o nazwie float przechowuje:
+1.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+2.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+3.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+4.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+5.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+6.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+7.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+8.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+9.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+10.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+11.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+12.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+13.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+14.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+15.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+16.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+17.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+18.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+19.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+20.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+21.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+22.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+23.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+24.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+25.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+26.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+27.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+28.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+29.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+30.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+31.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+32.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+33.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+34.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+35.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+36.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+37.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+38.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+39.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+40.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+41.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+42.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+43.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+44.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+45.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+46.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+47.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+48.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+49.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+50.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+51.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+52.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+53.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+54.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+55.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+56.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+57.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+58.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+59.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+60.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+61.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+62.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+63.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+64.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+65.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+66.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+67.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+68.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+69.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+70.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+71.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+72.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+73.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+74.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+75.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+76.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+77.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
 Potrawa
 Framework
-Typ zmiennych o nazwie float przechowuje:
+78.Typ zmiennych o nazwie float przechowuje:
 3
 liczby calkowite
 napisy
 liczby zmiennoprzecinkowe
 pojedyncze znaki
-Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
+79.Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 4
 Wait(2000)
 Stop(2000)
 Delay(2000)
 Sleep(2000)
-Ktora deklaracja jest zapisana poprawnie?
+80.Ktora deklaracja jest zapisana poprawnie?
 1
 int x;
 integer x;
 x:integer;
 x=integer;
-Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
+81.Z jakiego przedzialu zostanie wylosowana liczba: rand()%10+2
 3
 0..9
 2..9
 2..11
 0..11
-Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
+82.Ile razy wykona sie petla: for (int i=4; i>=-2; i--)
 4
 ani razu
 nieskonczenie wiele razy
 6
 7
-Jaki jest najlepszy jezyk programowania?
+83.Jaki jest najlepszy jezyk programowania?
 3
 Python
 C++
 C
 Java
-Co to jest github?
+84.Co to jest github?
 2
 Odmiana kota
 System kontroli wersji
